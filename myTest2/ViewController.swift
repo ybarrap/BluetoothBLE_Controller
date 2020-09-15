@@ -15,7 +15,9 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     var ledBT: CBPeripheral!
     let ledBTservice = CBUUID(string: "FFE0")
     let ledBTcharacteristic = CBUUID(string: "FFE1")
-    var bytes : [String] = ["0"]
+    var ledState: [String] = ["0"]
+    var ledCharacteristic: CBCharacteristic!
+    var ledPeripheral:CBPeripheral!
     
     @IBOutlet weak var switchState: UISwitch!
     
@@ -27,10 +29,14 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     
     @IBAction func switchChanged(_ sender: Any) {
         if switchState.isOn {
-            bytes[0] = "1"
+            ledState[0] = "1"
         }
-        else { bytes[0] = "0"}
-        ledBT.discoverServices([ledBTservice])
+        else { ledState[0] = "0"}
+        let data = NSData(bytes: ledState, length: ledState.count)
+        ledPeripheral.writeValue(data as Data, for: ledCharacteristic, type: CBCharacteristicWriteType.withoutResponse)
+        ledPeripheral.readValue(for: ledCharacteristic)
+        print(ledCharacteristic!)
+//        ledBT.discoverServices([ledBTservice])
     }
 }
 

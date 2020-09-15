@@ -19,19 +19,13 @@ extension ViewController {
     }
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
         guard let characteristics = service.characteristics else {return}
-        //        let bytes : [String] = ["0"]
-        //        let data: NSData = "1".data(using: String.Encoding.utf8)! as NSData
-        let data = NSData(bytes: bytes, length: bytes.count)
+        ledPeripheral = peripheral
         for characteristic in characteristics {
-            print(characteristic)
-            peripheral.writeValue(data as Data, for: characteristic, type: CBCharacteristicWriteType.withoutResponse)
-            peripheral.readValue(for: characteristic)
-            print(characteristic)
+            ledCharacteristic = characteristic
         }
     }
-    
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
-        print(characteristic.value ?? "no value")
+        print(" Char val: \(String(describing: characteristic.value))" )
         
     }
 }
