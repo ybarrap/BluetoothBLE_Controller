@@ -10,12 +10,14 @@ import UIKit
 import CoreBluetooth
 
 class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
-
+    
     var manager:CBCentralManager!
     var ledBT: CBPeripheral!
     let ledBTservice = CBUUID(string: "FFE0")
     let ledBTcharacteristic = CBUUID(string: "FFE1")
     var bytes : [String] = ["0"]
+    
+    @IBOutlet weak var switchState: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     }
     
     @IBAction func switchChanged(_ sender: Any) {
-        if bytes[0] == "0" {
+        if switchState.isOn {
             bytes[0] = "1"
         }
         else { bytes[0] = "0"}
