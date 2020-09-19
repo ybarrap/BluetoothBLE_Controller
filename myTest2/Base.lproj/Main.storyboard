@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLELEDController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2zo-Hd-5Hf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <accessibility key="accessibilityConfiguration" label="LED Switch">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Agv-MJ-k9V">
+                                <rect key="frame" x="0.0" y="402.5" width="414" height="91"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="128" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="KlO-Vs-x0B">
+                                        <rect key="frame" x="28" y="0.0" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="sliderState:" destination="BYZ-38-t0r" eventType="valueChanged" id="n9h-cA-XgT"/>
+                                        </connections>
+                                    </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RnD-AV-dZh" userLabel="SwitchLED">
+                                        <rect key="frame" x="182.5" y="60" width="51" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" label="Turn On LED">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
+                                        <connections>
+                                            <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="TRn-me-0Ns"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RnD-AV-dZh" firstAttribute="centerX" secondItem="Agv-MJ-k9V" secondAttribute="centerX" id="Lm6-yc-SRc"/>
+                                    <constraint firstAttribute="trailing" secondItem="KlO-Vs-x0B" secondAttribute="trailing" constant="30" id="Pn7-gG-Obb"/>
+                                    <constraint firstItem="KlO-Vs-x0B" firstAttribute="leading" secondItem="Agv-MJ-k9V" secondAttribute="leading" constant="30" id="r0G-Xz-P7c"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select BLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wug-l4-9lO">
+                                <rect key="frame" x="133" y="144" width="149" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Agv-MJ-k9V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3t2-hA-t9A"/>
+                            <constraint firstItem="Agv-MJ-k9V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kw2-T3-eWh"/>
+                            <constraint firstItem="2zo-Hd-5Hf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WUz-0M-5JZ"/>
+                            <constraint firstItem="2zo-Hd-5Hf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aTF-ZX-H6I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2zo-Hd-5Hf" secondAttribute="trailing" id="c4P-lo-SrN"/>
+                            <constraint firstAttribute="bottom" secondItem="2zo-Hd-5Hf" secondAttribute="bottom" id="c82-tO-fRb"/>
+                            <constraint firstItem="Agv-MJ-k9V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hbB-MZ-I7V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sliderValue" destination="KlO-Vs-x0B" id="ni6-JW-IIm"/>
+                        <outlet property="switchState" destination="RnD-AV-dZh" id="IgM-Zw-G8f"/>
+                        <outlet property="textField" destination="wug-l4-9lO" id="Qyr-rc-g4x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

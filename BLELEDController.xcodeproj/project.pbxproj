@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C2E6BF825103A9E0050BE18 /* PeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E6BF725103A9E0050BE18 /* PeripheralManager.swift */; };
+		4C2E6BFA25103C410050BE18 /* CentralMgrManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E6BF925103C410050BE18 /* CentralMgrManager.swift */; };
+		4C2E6BFC25107E490050BE18 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2E6BFB25107E490050BE18 /* Default-568h@2x.png */; };
+		4CC60C8024DE4DFF00CB46C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC60C7F24DE4DFF00CB46C7 /* AppDelegate.swift */; };
+		4CC60C8224DE4DFF00CB46C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC60C8124DE4DFF00CB46C7 /* SceneDelegate.swift */; };
+		4CC60C8424DE4DFF00CB46C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC60C8324DE4DFF00CB46C7 /* ViewController.swift */; };
+		4CC60C8724DE4DFF00CB46C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC60C8524DE4DFF00CB46C7 /* Main.storyboard */; };
+		4CC60C8924DE4E3900CB46C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC60C8824DE4E3900CB46C7 /* Assets.xcassets */; };
+		4CC60C8C24DE4E3900CB46C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC60C8A24DE4E3900CB46C7 /* LaunchScreen.storyboard */; };
+		4CC60C9724DE4E3A00CB46C7 /* myTest2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC60C9624DE4E3A00CB46C7 /* myTest2Tests.swift */; };
+		4CC60CA224DE4E3B00CB46C7 /* myTest2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC60CA124DE4E3B00CB46C7 /* myTest2UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC60C9324DE4E3A00CB46C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC60C7424DE4DFF00CB46C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CC60C7B24DE4DFF00CB46C7;
+			remoteInfo = myTest2;
+		};
+		4CC60C9E24DE4E3A00CB46C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC60C7424DE4DFF00CB46C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CC60C7B24DE4DFF00CB46C7;
+			remoteInfo = myTest2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C2E6BF725103A9E0050BE18 /* PeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralManager.swift; sourceTree = "<group>"; };
+		4C2E6BF925103C410050BE18 /* CentralMgrManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMgrManager.swift; sourceTree = "<group>"; };
+		4C2E6BFB25107E490050BE18 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4CC60C7C24DE4DFF00CB46C7 /* BLELEDController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLELEDController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC60C7F24DE4DFF00CB46C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CC60C8124DE4DFF00CB46C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4CC60C8324DE4DFF00CB46C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CC60C8624DE4DFF00CB46C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CC60C8824DE4E3900CB46C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CC60C8B24DE4E3900CB46C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CC60C8D24DE4E3900CB46C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC60C9224DE4E3A00CB46C7 /* BLELEDControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLELEDControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC60C9624DE4E3A00CB46C7 /* myTest2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTest2Tests.swift; sourceTree = "<group>"; };
+		4CC60C9824DE4E3A00CB46C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC60C9D24DE4E3A00CB46C7 /* BLELEDControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLELEDControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC60CA124DE4E3B00CB46C7 /* myTest2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTest2UITests.swift; sourceTree = "<group>"; };
+		4CC60CA324DE4E3B00CB46C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC60CB224DE5DA400CB46C7 /* Arial Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arial Bold.ttf"; path = "../../../../../../System/Library/Fonts/Supplemental/Arial Bold.ttf"; sourceTree = "<group>"; };
+		4CC60CB324DE5DA400CB46C7 /* Arial Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arial Italic.ttf"; path = "../../../../../../System/Library/Fonts/Supplemental/Arial Italic.ttf"; sourceTree = "<group>"; };
+		4CC60CB424DE5DA400CB46C7 /* Arial Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arial Bold Italic.ttf"; path = "../../../../../../System/Library/Fonts/Supplemental/Arial Bold Italic.ttf"; sourceTree = "<group>"; };
+		4CC60CB524DE5DA400CB46C7 /* Arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Arial.ttf; path = ../../../../../../System/Library/Fonts/Supplemental/Arial.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CC60C7924DE4DFF00CB46C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC60C8F24DE4E3A00CB46C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC60C9A24DE4E3A00CB46C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C2E6BF6251039A50050BE18 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4C2E6BF725103A9E0050BE18 /* PeripheralManager.swift */,
+				4C2E6BF925103C410050BE18 /* CentralMgrManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4CC60C7324DE4DFF00CB46C7 = {
+			isa = PBXGroup;
+			children = (
+				4C2E6BFB25107E490050BE18 /* Default-568h@2x.png */,
+				4C2E6BF6251039A50050BE18 /* Managers */,
+				4CC60C7E24DE4DFF00CB46C7 /* myTest2 */,
+				4CC60C9524DE4E3A00CB46C7 /* myTest2Tests */,
+				4CC60CA024DE4E3A00CB46C7 /* myTest2UITests */,
+				4CC60C7D24DE4DFF00CB46C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CC60C7D24DE4DFF00CB46C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CC60C7C24DE4DFF00CB46C7 /* BLELEDController.app */,
+				4CC60C9224DE4E3A00CB46C7 /* BLELEDControllerTests.xctest */,
+				4CC60C9D24DE4E3A00CB46C7 /* BLELEDControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CC60C7E24DE4DFF00CB46C7 /* myTest2 */ = {
+			isa = PBXGroup;
+			children = (
+				4CC60CB124DE5D6500CB46C7 /* Resources */,
+				4CC60C7F24DE4DFF00CB46C7 /* AppDelegate.swift */,
+				4CC60C8124DE4DFF00CB46C7 /* SceneDelegate.swift */,
+				4CC60C8324DE4DFF00CB46C7 /* ViewController.swift */,
+				4CC60C8524DE4DFF00CB46C7 /* Main.storyboard */,
+				4CC60C8824DE4E3900CB46C7 /* Assets.xcassets */,
+				4CC60C8A24DE4E3900CB46C7 /* LaunchScreen.storyboard */,
+				4CC60C8D24DE4E3900CB46C7 /* Info.plist */,
+			);
+			path = myTest2;
+			sourceTree = "<group>";
+		};
+		4CC60C9524DE4E3A00CB46C7 /* myTest2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC60C9624DE4E3A00CB46C7 /* myTest2Tests.swift */,
+				4CC60C9824DE4E3A00CB46C7 /* Info.plist */,
+			);
+			path = myTest2Tests;
+			sourceTree = "<group>";
+		};
+		4CC60CA024DE4E3A00CB46C7 /* myTest2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC60CA124DE4E3B00CB46C7 /* myTest2UITests.swift */,
+				4CC60CA324DE4E3B00CB46C7 /* Info.plist */,
+			);
+			path = myTest2UITests;
+			sourceTree = "<group>";
+		};
+		4CC60CB124DE5D6500CB46C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CC60CB424DE5DA400CB46C7 /* Arial Bold Italic.ttf */,
+				4CC60CB224DE5DA400CB46C7 /* Arial Bold.ttf */,
+				4CC60CB324DE5DA400CB46C7 /* Arial Italic.ttf */,
+				4CC60CB524DE5DA400CB46C7 /* Arial.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CC60C7B24DE4DFF00CB46C7 /* BLELEDController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC60CA624DE4E3B00CB46C7 /* Build configuration list for PBXNativeTarget "BLELEDController" */;
+			buildPhases = (
+				4CC60C7824DE4DFF00CB46C7 /* Sources */,
+				4CC60C7924DE4DFF00CB46C7 /* Frameworks */,
+				4CC60C7A24DE4DFF00CB46C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLELEDController;
+			productName = myTest2;
+			productReference = 4CC60C7C24DE4DFF00CB46C7 /* BLELEDController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CC60C9124DE4E3A00CB46C7 /* BLELEDControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC60CA924DE4E3B00CB46C7 /* Build configuration list for PBXNativeTarget "BLELEDControllerTests" */;
+			buildPhases = (
+				4CC60C8E24DE4E3A00CB46C7 /* Sources */,
+				4CC60C8F24DE4E3A00CB46C7 /* Frameworks */,
+				4CC60C9024DE4E3A00CB46C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC60C9424DE4E3A00CB46C7 /* PBXTargetDependency */,
+			);
+			name = BLELEDControllerTests;
+			productName = myTest2Tests;
+			productReference = 4CC60C9224DE4E3A00CB46C7 /* BLELEDControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4CC60C9C24DE4E3A00CB46C7 /* BLELEDControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC60CAC24DE4E3B00CB46C7 /* Build configuration list for PBXNativeTarget "BLELEDControllerUITests" */;
+			buildPhases = (
+				4CC60C9924DE4E3A00CB46C7 /* Sources */,
+				4CC60C9A24DE4E3A00CB46C7 /* Frameworks */,
+				4CC60C9B24DE4E3A00CB46C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC60C9F24DE4E3A00CB46C7 /* PBXTargetDependency */,
+			);
+			name = BLELEDControllerUITests;
+			productName = myTest2UITests;
+			productReference = 4CC60C9D24DE4E3A00CB46C7 /* BLELEDControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CC60C7424DE4DFF00CB46C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = org.ybarrap;
+				TargetAttributes = {
+					4CC60C7B24DE4DFF00CB46C7 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					4CC60C9124DE4E3A00CB46C7 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 4CC60C7B24DE4DFF00CB46C7;
+					};
+					4CC60C9C24DE4E3A00CB46C7 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 4CC60C7B24DE4DFF00CB46C7;
+					};
+				};
+			};
+			buildConfigurationList = 4CC60C7724DE4DFF00CB46C7 /* Build configuration list for PBXProject "BLELEDController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CC60C7324DE4DFF00CB46C7;
+			productRefGroup = 4CC60C7D24DE4DFF00CB46C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CC60C7B24DE4DFF00CB46C7 /* BLELEDController */,
+				4CC60C9124DE4E3A00CB46C7 /* BLELEDControllerTests */,
+				4CC60C9C24DE4E3A00CB46C7 /* BLELEDControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CC60C7A24DE4DFF00CB46C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC60C8C24DE4E3900CB46C7 /* LaunchScreen.storyboard in Resources */,
+				4C2E6BFC25107E490050BE18 /* Default-568h@2x.png in Resources */,
+				4CC60C8924DE4E3900CB46C7 /* Assets.xcassets in Resources */,
+				4CC60C8724DE4DFF00CB46C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC60C9024DE4E3A00CB46C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC60C9B24DE4E3A00CB46C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CC60C7824DE4DFF00CB46C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2E6BFA25103C410050BE18 /* CentralMgrManager.swift in Sources */,
+				4C2E6BF825103A9E0050BE18 /* PeripheralManager.swift in Sources */,
+				4CC60C8424DE4DFF00CB46C7 /* ViewController.swift in Sources */,
+				4CC60C8024DE4DFF00CB46C7 /* AppDelegate.swift in Sources */,
+				4CC60C8224DE4DFF00CB46C7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC60C8E24DE4E3A00CB46C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC60C9724DE4E3A00CB46C7 /* myTest2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC60C9924DE4E3A00CB46C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC60CA224DE4E3B00CB46C7 /* myTest2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CC60C9424DE4E3A00CB46C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CC60C7B24DE4DFF00CB46C7 /* BLELEDController */;
+			targetProxy = 4CC60C9324DE4E3A00CB46C7 /* PBXContainerItemProxy */;
+		};
+		4CC60C9F24DE4E3A00CB46C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CC60C7B24DE4DFF00CB46C7 /* BLELEDController */;
+			targetProxy = 4CC60C9E24DE4E3A00CB46C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CC60C8524DE4DFF00CB46C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC60C8624DE4DFF00CB46C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CC60C8A24DE4E3900CB46C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC60C8B24DE4E3900CB46C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CC60CA424DE4E3B00CB46C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CC60CA524DE4E3B00CB46C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CC60CA724DE4E3B00CB46C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAZ42TND9C;
+				INFOPLIST_FILE = myTest2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulybarra.myTest2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CC60CA824DE4E3B00CB46C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAZ42TND9C;
+				INFOPLIST_FILE = myTest2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulybarra.myTest2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4CC60CAA24DE4E3B00CB46C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAZ42TND9C;
+				INFOPLIST_FILE = myTest2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulybarra.myTest2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLELEDController.app/BLELEDController";
+			};
+			name = Debug;
+		};
+		4CC60CAB24DE4E3B00CB46C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAZ42TND9C;
+				INFOPLIST_FILE = myTest2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulybarra.myTest2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLELEDController.app/BLELEDController";
+			};
+			name = Release;
+		};
+		4CC60CAD24DE4E3B00CB46C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAZ42TND9C;
+				INFOPLIST_FILE = myTest2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulybarra.myTest2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = myTest2;
+			};
+			name = Debug;
+		};
+		4CC60CAE24DE4E3B00CB46C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAZ42TND9C;
+				INFOPLIST_FILE = myTest2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulybarra.myTest2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = myTest2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CC60C7724DE4DFF00CB46C7 /* Build configuration list for PBXProject "BLELEDController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC60CA424DE4E3B00CB46C7 /* Debug */,
+				4CC60CA524DE4E3B00CB46C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC60CA624DE4E3B00CB46C7 /* Build configuration list for PBXNativeTarget "BLELEDController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC60CA724DE4E3B00CB46C7 /* Debug */,
+				4CC60CA824DE4E3B00CB46C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC60CA924DE4E3B00CB46C7 /* Build configuration list for PBXNativeTarget "BLELEDControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC60CAA24DE4E3B00CB46C7 /* Debug */,
+				4CC60CAB24DE4E3B00CB46C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC60CAC24DE4E3B00CB46C7 /* Build configuration list for PBXNativeTarget "BLELEDControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC60CAD24DE4E3B00CB46C7 /* Debug */,
+				4CC60CAE24DE4E3B00CB46C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CC60C7424DE4DFF00CB46C7 /* Project object */;
+}

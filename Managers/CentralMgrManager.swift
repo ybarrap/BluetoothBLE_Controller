@@ -12,17 +12,17 @@ import CoreBluetooth
 extension ViewController {
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         print(peripheral)
-        if peripheral.name == "BT05"{
-            ledBT = peripheral
-            ledBT.delegate = self
-            manager.stopScan()
-            manager.connect(ledBT)
+        //        perphFound.append(peripheral)
+        if peripheral.name != nil {
+            ledPerpherals.append(peripheral)
+            pickData.append(String(peripheral.name!))
         }
     }
     
+    
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         print("Connected")
-        ledBT.discoverServices([ledBTservice])
+        peripheral.discoverServices([])
     }
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
