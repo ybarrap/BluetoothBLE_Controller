@@ -33,7 +33,6 @@ extension ViewController {
             tmpStr = "\(ledCharacteristic.uuid)"
             let range = NSRange(location: 0, length: tmpStr.utf8.count)
             if  regex.firstMatch(in: tmpStr, options: [], range: range) != nil{
-                //                print(ledCharacteristic ?? "No characteristic")
                 print("Characteristic = \(String(describing: ledCharacteristic.uuid))")
                 break
             }

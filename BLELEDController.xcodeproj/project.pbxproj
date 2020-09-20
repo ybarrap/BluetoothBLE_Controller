@@ -10,6 +10,7 @@
 		4C2E6BF825103A9E0050BE18 /* PeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E6BF725103A9E0050BE18 /* PeripheralManager.swift */; };
 		4C2E6BFA25103C410050BE18 /* CentralMgrManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E6BF925103C410050BE18 /* CentralMgrManager.swift */; };
 		4C2E6BFC25107E490050BE18 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2E6BFB25107E490050BE18 /* Default-568h@2x.png */; };
+		4C5DDAA9251728AE00877FA1 /* PickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DDAA8251728AE00877FA1 /* PickerManager.swift */; };
 		4CC60C8024DE4DFF00CB46C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC60C7F24DE4DFF00CB46C7 /* AppDelegate.swift */; };
 		4CC60C8224DE4DFF00CB46C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC60C8124DE4DFF00CB46C7 /* SceneDelegate.swift */; };
 		4CC60C8424DE4DFF00CB46C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC60C8324DE4DFF00CB46C7 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		4C2E6BF725103A9E0050BE18 /* PeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralManager.swift; sourceTree = "<group>"; };
 		4C2E6BF925103C410050BE18 /* CentralMgrManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMgrManager.swift; sourceTree = "<group>"; };
 		4C2E6BFB25107E490050BE18 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4C5DDAA8251728AE00877FA1 /* PickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerManager.swift; sourceTree = "<group>"; };
 		4CC60C7C24DE4DFF00CB46C7 /* BLELEDController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLELEDController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC60C7F24DE4DFF00CB46C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC60C8124DE4DFF00CB46C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				4C2E6BF725103A9E0050BE18 /* PeripheralManager.swift */,
 				4C2E6BF925103C410050BE18 /* CentralMgrManager.swift */,
+				4C5DDAA8251728AE00877FA1 /* PickerManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				4CC60C8424DE4DFF00CB46C7 /* ViewController.swift in Sources */,
 				4CC60C8024DE4DFF00CB46C7 /* AppDelegate.swift in Sources */,
 				4CC60C8224DE4DFF00CB46C7 /* SceneDelegate.swift in Sources */,
+				4C5DDAA9251728AE00877FA1 /* PickerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

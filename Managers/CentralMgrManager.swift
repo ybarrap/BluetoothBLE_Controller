@@ -46,4 +46,9 @@ extension ViewController {
         }
         print(consoleMsg)
     }
+    
+    @objc func scanStop() {
+        manager.stopScan()
+//        print(pickData)
+    }
 }
