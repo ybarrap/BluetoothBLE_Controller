@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  myTest2
 //
-//  Created by Dad on 8/7/20.
+//  Created by Paul Ybarra on 8/7/20.
 //  Copyright © 2020 org.ybarrap. All rights reserved.
 //
 

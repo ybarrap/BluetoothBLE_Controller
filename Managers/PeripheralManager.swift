@@ -2,7 +2,7 @@
 //  Periferals.swift
 //  myTest2
 //
-//  Created by Dad on 9/14/20.
+//  Created by Paul Ybarra on 9/14/20.
 //  Copyright © 2020 org.ybarrap. All rights reserved.
 //
 
