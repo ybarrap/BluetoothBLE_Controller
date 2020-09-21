@@ -6,7 +6,7 @@
 //  Copyright © 2020 org.ybarrap. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 import CoreBluetooth
 
 extension ViewController {
@@ -34,6 +34,7 @@ extension ViewController {
             let range = NSRange(location: 0, length: tmpStr.utf8.count)
             if  regex.firstMatch(in: tmpStr, options: [], range: range) != nil{
                 print("Characteristic = \(String(describing: ledCharacteristic.uuid))")
+                textField.text = "Move slider or switch"
                 break
             }
         }

@@ -48,11 +48,13 @@
                                     <constraint firstItem="KlO-Vs-x0B" firstAttribute="leading" secondItem="Agv-MJ-k9V" secondAttribute="leading" constant="30" id="r0G-Xz-P7c"/>
                                 </constraints>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select BLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wug-l4-9lO">
-                                <rect key="frame" x="133" y="144" width="149" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <color key="textColor" systemColor="systemGreenColor"/>
+                            <textField clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Scanning..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wug-l4-9lO">
+                                <rect key="frame" x="131.5" y="144" width="151" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -61,7 +63,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Agv-MJ-k9V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3t2-hA-t9A"/>
+                            <constraint firstItem="wug-l4-9lO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Ati-lj-9mg"/>
                             <constraint firstItem="Agv-MJ-k9V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kw2-T3-eWh"/>
+                            <constraint firstItem="wug-l4-9lO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RNy-5i-AEK"/>
                             <constraint firstItem="2zo-Hd-5Hf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WUz-0M-5JZ"/>
                             <constraint firstItem="2zo-Hd-5Hf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aTF-ZX-H6I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2zo-Hd-5Hf" secondAttribute="trailing" id="c4P-lo-SrN"/>
@@ -85,8 +89,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

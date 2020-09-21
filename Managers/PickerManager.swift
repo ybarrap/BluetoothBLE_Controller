@@ -2,7 +2,7 @@
 //  PickerManager.swift
 //  BLELEDController
 //
-//  Created by Dad on 9/20/20.
+//  Created by Paul Ybarra on 9/20/20.
 //  Copyright © 2020 org.ybarrap. All rights reserved.
 //
 
@@ -20,18 +20,19 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewAccessibilityDeleg
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        //        print("Row = \(bleRow)")
         return pickData[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         bleRow = row
         textField.text = pickData[bleRow]
-//        print("Row = \(bleRow)")
+        print("Row = \(bleRow)")
     }
     
     func createPicker() {
         let pickerVw = UIPickerView()
-        pickerVw.dataSource = self
+        //        pickerVw.dataSource = self
         pickerVw.delegate = self
         textField.inputView = pickerVw
     }
@@ -50,11 +51,15 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewAccessibilityDeleg
     }
     
     @objc func dismissKeyboard() {
+        
+        if bleRow == -1 { bleRow = 0}
         ledPeripheral = ledPerpherals[bleRow]
         ledPeripheral.delegate = self
         manager.connect(ledPeripheral)
-//        print(ledPerpherals)
+        //        print(ledPerpherals)
         view.endEditing(true)
+        textField.text = pickData[bleRow]
+        
     }
     
 }

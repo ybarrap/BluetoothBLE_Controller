@@ -21,7 +21,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     var ledPerpherals: [CBPeripheral] = []
     var pickData: [String] = []
     var pickSelected: String?
-    var bleRow = 0
+    var bleRow: Int = -1
     var perphFound: [CBPeripheral] = []
     
     @IBOutlet weak var switchState: UISwitch!
@@ -33,14 +33,20 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         manager = CBCentralManager(delegate: self, queue: nil)
         createPicker()
         createToolbar()
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(scanStop), userInfo: nil, repeats: false)
+        textField.textColor = .systemRed
+        textField.backgroundColor = .black
+        //        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(scanStop), userInfo: nil, repeats: false)
     }
     
     
     @IBAction func sliderState(_ sender: Any) {
         ledState[0] = UInt8(sliderValue.value)
         let data = NSData(bytes: ledState, length: ledState.count)
-        ledPeripheral.writeValue(data as Data, for: ledCharacteristic, type: CBCharacteristicWriteType.withoutResponse)
+        if bleRow != -1 {
+            ledPeripheral.writeValue(data as Data, for: ledCharacteristic, type: CBCharacteristicWriteType.withoutResponse)
+            if textField.isEnabled {textField.text = "\(Int(sliderValue.value))"
+            }
+        }
         //        ledPeripheral.readValue(for: ledCharacteristic)
         //        print(ledCharacteristic!)
     }
@@ -51,7 +57,14 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         }
         else { ledState[0] = 0}
         let data = NSData(bytes: ledState, length: ledState.count)
-        ledPeripheral.writeValue(data as Data, for: ledCharacteristic, type: CBCharacteristicWriteType.withoutResponse)
+        if bleRow != -1 {
+            ledPeripheral.writeValue(data as Data, for: ledCharacteristic, type: CBCharacteristicWriteType.withoutResponse)
+            if textField.isEnabled {
+                if switchState.isOn
+                {textField.text = "LED On"}
+                else { textField.text = "LED Off"}
+            }
+        }
         //        ledPeripheral.readValue(for: ledCharacteristic)
         //        print(ledCharacteristic!)
         //        ledBT.discoverServices([ledBTservice])
